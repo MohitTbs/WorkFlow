@@ -1,0 +1,39 @@
+-------------------------------------
+--Android Inspector Settings
+
+{
+  "appium:appPackage": "com.TCW",
+  "appium:appActivity": "com.TCW.MainActivity",
+  "platformName": "Android",
+  "appium:automationName": "uiautomator2",
+  "appium:noReset": true,
+  "appium:platformVersion": "12.0",
+  "appium:automationName": "Espresso",
+  "appium:app": "app-debug.apk",
+  "udid": "ENUL630010"
+  
+}
+
+---------------------------------------------
+--get package and activity for android
+On Windows:
+adb shell dumpsys window | find "mCurrentFocus"
+
+On Mac/Linux:
+adb shell dumpsys window | grep -E mCurrentFocus
+
+------------------------------------------------
+--Open Port via cmd
+
+appium --address 127.0.0.1 --port 4723
+------------------------------------------------
+--Other appium commands
+appium driver list
+appium driver install uiautomator2
+appium driver uninstall uiautomator2
+appium plugin list
+appium plugin install images
+-----------------------------
+--install appium
+npm install -g appium
+

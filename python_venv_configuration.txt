@@ -1,1 +1,22 @@
+-- We can create a separate environment file for the working directory
+(.venv) is the default environment
+
+-- to use virtual environment
+pip install virtualenv
+
+-- suppose you do not have any environment then you can create a one
+go to the terminal and type this:
+virtualenv env
+This will create a new environment folder named "env"
+
+-- Now you want to activate this environment for your working directory
+go to the terminal and type this:
+.\env\Scripts\activate.ps1
+
+-- To deactivate the environment
+go to the terminal and type this:
+deactivate
+
+
+
 

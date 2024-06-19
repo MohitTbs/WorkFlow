@@ -17,6 +17,13 @@ go to the terminal and type this:
 go to the terminal and type this:
 deactivate
 
+-- To see the installed packages
+pip freeze
 
+-- to copy the packages list to a file
+pip freeze requirements.txt
+
+-- to copy the packages to the environments
+pip install -r .\requirements.txt
 
 

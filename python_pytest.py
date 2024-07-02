@@ -258,3 +258,15 @@
 #  go to the terminal and write it down:
 #  pytest --browser chrome
 
+
+# ----------------------------------------------------------------------
+# Rerun failed test cases
+# https://pypi.org/project/pytest-rerunfailures/
+# https://docs.pytest.org/en/7.1.x/how-to/cache.html
+
+# We can use --lf after the execution of all test cases.
+# This will run only the failed test cases
+
+# But, if you want to rerun the failed test cases sequentially, you can use this
+# pip install pytest-rerunfailures
+# pytest test\test_demo1 -rA --reruns 5

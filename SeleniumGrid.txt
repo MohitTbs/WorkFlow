@@ -1,0 +1,20 @@
+1) -- Download selenium server and all the drivers such as chromedriver, gecko, microsoft edge. ie and place them under one folder.
+
+2) -- If you want to use grid without hub and node then you can use standalone options.
+    --> go the directory where all these files are stored and open the command prompt
+    --> Type in: java -jar selenium-server-4.20.0.jar standalone
+    --> If you want to check if the server is running, then go to your browser and type in the url you are seeing on prompt
+
+
+3) -- If you want to use hub and node on the same machine
+    --> go the directory where all these files are stored and open the command prompt
+    --> In one command prompt type in: java -jar selenium-server-4.20.0.jar hub
+    --> In another command prompt type in: java -jar selenium-server-4.20.0.jar node
+
+4) -- If you want to use hub and node on different machines
+    --> go the directory where all these files are stored and open the command prompt where you want to start hub
+    --> In the command prompt type in: java -jar selenium-server-4.20.0.jar hub
+    --> Go to another machine and open the command prompt where you want to start node
+    --> In the command prompt type in: java -jar selenium-server-4.22.0.jar node --detect-drivers true --publish-events tcp://192.168.1.54:4442 --subscribe-events tcp://192.168.1.54:4443
+
+NOTE: The ip address changes according to your ip

@@ -18,3 +18,6 @@
     --> In the command prompt type in: java -jar selenium-server-4.22.0.jar node --detect-drivers true --publish-events tcp://192.168.1.54:4442 --subscribe-events tcp://192.168.1.54:4443
 
 NOTE: The ip address changes according to your ip
+
+5) --browser names that you can provide
+    --> chrome, firefox, MicrosoftEdge, internet explorer

@@ -154,3 +154,22 @@
 //         "employee": "As Sa"
 //     }
 // }
+
+// 10. Setting up environment with .env  files
+// first install --> npm install dotenv --save
+// create a folder and inside this folder create two files say: .env.development, .env.staging
+// These .env file stores the key value pairs such as ENV=staging, URL=staging.pre.com
+
+// Now go to playwright.config.js file
+// import dotenv as const dotenv = require('dotenv')
+// somewhere on the top write this:
+
+// dotenv.config({
+//   path: `./env/.env.${process.env.ENV}`       // You can give any name to ENV
+// });
+
+// Before running the test you need to set the environmnet from terminal
+// This is the documentation: https://playwright.dev/docs/test-parameterize
+// If you are on powershell:
+// $env.ENV="staging"   //-- This will take .env.staging file
+// and the write: npx playwright test

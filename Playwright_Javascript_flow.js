@@ -6,7 +6,7 @@
 // npx playwright test tests/abc.spec.js --headed chrome
 
 //3. USing worker
-// npx playwright test tests/abc.spec.js --headed --worker=4 chrome
+// npx playwright test tests/abc.spec.js --headed --workers=4 chrome
 
 //4. Use loggers
 // npm install log4js
@@ -173,3 +173,8 @@
 // If you are on powershell:
 // $env.ENV="staging"   //-- This will take .env.staging file
 // and the write: npx playwright test
+
+
+
+//11. Run a specific test
+// npx playwright test -g "name of the test"

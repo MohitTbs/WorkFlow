@@ -178,3 +178,16 @@
 
 //11. Run a specific test
 // npx playwright test -g "name of the test"
+
+//12. Implement Allure Reports
+//We have to install allure-commandline first
+// npm install -g allure-commandline --save-dev
+
+// Install playwright-allure
+// npm i -D @playwright/test allure-playwright
+
+// Give path to the allure result generation in playwright.config.js file
+
+// After the tests have been executed, we can generate the allure report by the following command
+//allure generate allure-results -o allure-report --clean   -->This will generate allure-report folder
+//allure open allure-report --> This will open the allure result in a browser

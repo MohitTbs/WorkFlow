@@ -113,3 +113,13 @@ TCWCYPRESS
 
 */
 
+//-----------------------Parallel Execution and mochawesome report Configurations---------------------------
+// --> Links For reference
+//https://medium.com/@beginners_log/set-up-cypress-reports-for-parallel-run-fb4c3c0c8862
+//https://github.com/LironEr/cypress-mochawesome-reporter/tree/master/examples/cypress-parallel
+//https://github.com/cypress-io/testing-workshop-cypress/blob/master/slides/09-reporters/PITCHME.md#mochawesome
+//https://github.com/tnicola/cypress-parallel/issues/30
+//https://www.npmjs.com/package/cypress-parallel
+//https://www.youtube.com/watch?v=FLXkI-hvUNA
+//https://medium.com/@ivan_xue/how-to-run-tests-in-parallel-without-recording-to-cypress-cloud-from-azure-ci-c88b426b4154
+//https://www.youtube.com/watch?v=jvBzNs0pRXU
